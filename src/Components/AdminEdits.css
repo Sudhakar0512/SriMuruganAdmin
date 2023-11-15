@@ -1,0 +1,59 @@
+/* Styling for the container holding the form */
+.div {
+    max-width: 400px;
+    margin:30px auto;
+    padding:5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the form heading */
+  .h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling for form labels */
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  /* Styling for text input fields */
+  .input[type="text"],
+  .input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Styling for the submit button */
+  .button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the submit button */
+  .button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
