@@ -28,11 +28,15 @@ export default function AdminEdits() {
     formData.append("imageFile", product.imageFile);
 
     try {
-      await axios.post("http://localhost:8080/api/products/insert", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      await axios.post(
+        "https://srimuruganspringpro.onrender.com/api/products/insert",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
       // Reset the form or display a success message
       console.log("Product added successfully");
     } catch (error) {
@@ -52,6 +56,7 @@ export default function AdminEdits() {
             name="name"
             value={product.name}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div className="div">
@@ -61,10 +66,11 @@ export default function AdminEdits() {
             type="file"
             name="imageFile"
             onChange={handleFileChange}
+            required
           />
         </div>
         <button type="submit" className="button">
-        Add Construction
+          Add Construction
         </button>
       </form>
     </div>
