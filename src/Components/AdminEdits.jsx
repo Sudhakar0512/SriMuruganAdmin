@@ -29,7 +29,7 @@ export default function AdminEdits() {
 
     try {
       await axios.post(
-        "https://srimuruganspringpro.onrender.com/api/products/insert",
+        "https://srimuruganapi.onrender.com/api/products/insert",
         formData,
         {
           headers: {
